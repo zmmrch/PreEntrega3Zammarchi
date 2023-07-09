@@ -1,0 +1,311 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Releway-Medium;
+  src: url("../styles/Fonts/Raleway-Medium.ttf");
+}
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+}
+
+body,
+h1 {
+  font-family: Releway-Medium;
+  color: black;
+}
+
+h2 {
+  font-family: Releway-Medium;
+  color: black;
+  text-align: center;
+}
+
+.avatarLogo {
+  width: 40px;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  border: none;
+  font-family: Releway-Medium;
+  color: goldenrod;
+}
+.nav-link:hover {
+  font-size: 1.5rem;
+  border: none;
+  font-family: Releway-Medium;
+  color: grey;
+}
+
+.navPosiciones {
+  display: inline-block;
+  font-size: 1rem;
+  color: goldenrod;
+  border: none;
+  font-family: Releway-Medium;
+}
+
+#navbarNav {
+  font-family: Releway-Medium;
+  font-size: 24px;
+  letter-spacing: 2pt;
+}
+#navbarNav :hover {
+  color: red;
+}
+
+.colHistoria {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.imgHistoria {
+  height: fit-content;
+  width: fit-content;
+}
+
+.tituloClub {
+  font-family: Releway-Medium;
+  color: goldenrod;
+  text-align: center;
+}
+
+.etiquetaEquipo {
+  color: goldenrod;
+  font-size: 2rem;
+  font-family: Releway-Medium;
+}
+
+.tarjetaJugador {
+  width: 18rem;
+  height: 30rem;
+}
+.tarjetaJugador img:hover {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+  filter: saturate(180%);
+  transition-duration: 2s;
+}
+
+.carousel-inner .carousel-item .img {
+  object-fit: scale-down;
+  height: 50vh;
+  width: 100%;
+  background-image: url("../images/imagen_header_2.jpg");
+  background-size: contain;
+}
+
+.noticias {
+  padding-top: 20px;
+}
+
+#btnVerNoticia:hover {
+  background-color: white;
+  color: red;
+  border-color: red;
+}
+
+.galeriaVideos {
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 20px;
+}
+
+.galeriaImagenes {
+  padding-top: 10px;
+}
+
+.card {
+  overflow: hidden;
+}
+.card #imgGaleriaInicial:hover {
+  -webkit-transform: scale(1.3) 2s;
+  transform: scale(1.3);
+  transition-duration: 2s;
+}
+
+.galeriaInicialVid {
+  width: 100%;
+  height: 100%;
+}
+.galeriaInicialVid:hover {
+  -webkit-transform: scale(1.4) 2s;
+  transform: scale(1.4);
+  transition-duration: 2s;
+}
+
+.tituloNoticias {
+  font-size: 2rem;
+  text-align: center;
+  font-family: Releway-Medium;
+}
+
+.tituloGaleria {
+  font-size: 2rem;
+  text-align: center;
+  font-family: Releway-Medium;
+  color: white;
+}
+
+/*Formato y estilos página temporada*/
+.tablaPosiciones {
+  width: 90%;
+  height: 90%;
+  padding-left: 10%;
+  font-family: Releway-Medium;
+}
+
+.img-dos {
+  background-image: url("../images/pasarella_vestuario.png");
+}
+
+.parallax {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+  max-width: 100%;
+  position: relative;
+}
+
+.footer {
+  background-color: black;
+  font-family: Releway-Medium;
+  color: white;
+  text-align: center;
+}
+
+.hashtagRedes {
+  display: inline-block;
+  font-size: large;
+  color: white;
+  font-family: Releway-Medium;
+}
+
+.logo {
+  object-fit: cover;
+  width: 10%;
+  height: 10%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.tituloGaleriaImagenes {
+  font-size: 2rem;
+  text-align: center;
+  font-family: Releway-Medium;
+  color: goldenrod;
+}
+
+div.gallery {
+  border: 1px solid white;
+}
+div.gallery:hover {
+  border: 1px solid red;
+  filter: saturate(180%);
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.gallery iframe {
+  width: 100%;
+  height: 300px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: Releway-Medium;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+}
+input[type=submit]:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+#imgApp {
+  background-image: url("../images/noticias/Banda-HP-App-Ott2022.jpg");
+  width: 1350px;
+  height: 600px;
+}
+
+.btn-light {
+  font-family: Releway-Medium;
+  background: white;
+  border-color: white;
+  color: red;
+}
+.btn-light :hover {
+  background-color: white;
+  border-color: white;
+  color: red;
+  border-color: black;
+}
+
+.subir {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: red;
+  padding: 20px;
+  box-shadow: 0 0 5px white, 0 0 5px white;
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,343 @@
+//paleta de colores
+$color1: black;
+$color2: grey;
+$color3: goldenrod;
+$color4: red;
+$color5: white;
+//fuentes
+$font-family1: Releway-Medium;
+//colores de fondo
+$background-color1: black;
+$background-color2: red;
+$background-color3: white;
+
+@font-face {
+  font-family: Releway-Medium;
+  src: url("../styles/Fonts/Raleway-Medium.ttf");
+}
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: $background-color1;
+}
+
+body,
+h1 {
+  font-family: $font-family1;
+  color: $color1;
+}
+
+h2 {
+  font-family: $font-family1;
+  color: $color1;
+  text-align: center;
+}
+
+//Estilos barra de navegación
+.avatarLogo {
+  width: 40px;
+}
+
+//Nesting y mixin
+@mixin formatoNav {
+  font-size: 1.5rem;
+  border: none;
+  font-family: $font-family1;
+}
+.nav-link {
+  @include formatoNav();
+  color: $color3;
+  &:hover {
+    @include formatoNav();
+    color: $color2;
+  }
+}
+
+.navPosiciones {
+  display: inline-block;
+  font-size: 1rem;
+  color: $color3;
+  border: none;
+  font-family: $font-family1;
+}
+
+//Estilos de NavBar con Nesting
+#navbarNav {
+  font-family: $font-family1;
+  font-size: 24px;
+  letter-spacing: 2pt;
+  :hover {
+    color: $color4;
+  }
+}
+
+//Estilos y formatos página Club
+.colHistoria {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.imgHistoria {
+  height: fit-content;
+  width: fit-content;
+}
+
+.tituloClub {
+  font-family: $font-family1;
+  color: $color3;
+  text-align: center;
+}
+
+//Estilo página equipo
+.etiquetaEquipo {
+  color: $color3;
+  font-size: 2rem;
+  font-family: $font-family1;
+}
+
+.tarjetaJugador {
+  width: 18rem;
+  height: 30rem;
+  img:hover {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    filter: saturate(180%);
+    transition-duration: 2s;
+  }
+}
+
+//Ajuste de tamaños e imagen de fondo del carousel principal - Nesting
+.carousel-inner {
+  .carousel-item {
+    .img {
+      object-fit: scale-down;
+      height: 50vh;
+      width: 100%;
+      background-image: url("../images/imagen_header_2.jpg");
+      background-size: contain;
+    }
+  }
+}
+
+//Ajuste de tamaños y estilo container de noticias
+.noticias {
+  padding-top: 20px;
+}
+
+#btnVerNoticia:hover {
+  background-color: $color5;
+  color: $color4;
+  border-color: $color4;
+}
+
+.galeriaVideos {
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 20px;
+}
+
+.galeriaImagenes {
+  padding-top: 10px;
+}
+
+.card {
+  overflow: hidden;
+  #imgGaleriaInicial:hover {
+    -webkit-transform: scale(1.3) 2s;
+    transform: scale(1.3);
+    transition-duration: 2s;
+  }
+}
+
+.galeriaInicialVid {
+  width: 100%;
+  height: 100%;
+  &:hover {
+    -webkit-transform: scale(1.4) 2s;
+    transform: scale(1.4);
+    transition-duration: 2s;
+  }
+}
+
+//Uso de mixin para formato repetitivo
+@mixin formato1 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: $font-family1;
+}
+
+.tituloNoticias {
+  @include formato1();
+}
+
+.tituloGaleria {
+  @include formato1();
+  color: $color5;
+}
+
+/*Formato y estilos página temporada*/
+.tablaPosiciones {
+  width: 90%;
+  height: 90%;
+  padding-left: 10%;
+  font-family: $font-family1;
+}
+
+//Formato e imagen de parallax de página principal
+.img-dos {
+  background-image: url("../images/pasarella_vestuario.png");
+}
+.parallax {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+  max-width: 100%;
+  position: relative;
+}
+
+//Formato de Footer
+.footer {
+  background-color: $color1;
+  font-family: $font-family1;
+  color: $color5;
+  text-align: center;
+}
+
+.hashtagRedes {
+  display: inline-block;
+  font-size: large;
+  color: $color5;
+  font-family: $font-family1;
+}
+
+.logo {
+  object-fit: cover;
+  width: 10%;
+  height: 10%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+//Estilos y formatos página Galeria
+.tituloGaleriaImagenes {
+  @include formato1();
+  color: $color3;
+}
+
+//Nesting
+div.gallery {
+  border: 1px solid $color5;
+  &:hover {
+    border: 1px solid $color4;
+    filter: saturate(180%);
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: $font-family1;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//Estilos y formato del formulario de registro con mixin
+@mixin formato2 {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  @include formato2();
+  border: 1px solid $color5;
+}
+
+input[type="submit"] {
+  @include formato2();
+  border: 1px solid $color4;
+  background-color: $background-color2;
+  color: $color5;
+  &:hover {
+    background-color: $background-color3;
+    color: $color4;
+    border: 1px solid $color4;
+  }
+}
+
+//Seccion App
+#imgApp {
+  background-image: url("../images/noticias/Banda-HP-App-Ott2022.jpg");
+  width: 1350px;
+  height: 600px;
+}
+
+.btn-light {
+  font-family: $font-family1;
+  background: $color5;
+  border-color: $color5;
+  color: $color4;
+  :hover {
+    background-color: $color5;
+    border-color: $color5;
+    color: $color4;
+    border-color: $color1;
+  }
+}
+
+.subir {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: $background-color2;
+  padding: 20px;
+  box-shadow: 0 0 5px $color5, 0 0 5px $color5;
+  color: $color5;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}

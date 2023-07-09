@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AC Milan | Argentina Fan Website</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha383-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD45VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- link con el archivo de estilos de CSS-->
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header inner container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <!--inclusion de logo en la barra de navegación-->
+          <a class="navbar-brand" href="../index.html">
+            <img class="avatarLogo" src="../images/logo.png" alt="Avatar Logo" class="rounded-pill" />
+          </a>
+          <!--inclusion del botón hamburguesa cuando se reduce el espacio de visualización para otros dispositvos-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--elementos de la barra de navegación-->
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/equipo.html">Equipo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/club.html">Club</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/temporada.html">Temporada</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/fans.html">Fans</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenedor de Tablas de Posiciones -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <ul class="nav nav-tabs mt-5 mb-5">
+          <li class="nav-item navPosiciones">
+            <a class="nav-link active navPosiciones" data-bs-toggle="tab" href="#menu1">PRIMER EQUIPO MASCULINO</a>
+          </li>
+          <li class="nav-item navPosiciones">
+            <a class="nav-link navPosiciones" data-bs-toggle="tab" href="#menu2">PRIMER EQUIPO FEMENINO</a>
+          </li>
+          <li class="nav-item navPosiciones">
+            <a class="nav-link navPosiciones" data-bs-toggle="tab" href="#menu3">UEFA Champions League</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="tab-content mb-5">
+          <div class="tab-pane container active navPosiciones" id="menu1"><img class="tablaPosiciones"
+              src="../images/tabla/standing_italian_serieA_M.JPG" alt=""></div>
+          <div class="tab-pane container fade navPosiciones" id="menu2"><img class="tablaPosiciones"
+              src="../images/tabla/standing_italian_serieA_F.JPG" alt="">
+          </div>
+          <div class="tab-pane container fade navPosiciones" id="menu3"><img class="tablaPosiciones"
+              src="../images/tabla/standing_italian_UEFA_M.JPG" alt=""></div>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="text-center">
+        <strong class="hashtagRedes">#ALWAYSMILAN</strong>
+        <img class="logo" src="../images/logo.png" alt="">
+        <strong class="hashtagRedes">#SEMPREMILAN</strong>
+        <div class="d-flex justify-content-center fs-2 gap-4 mt-5">
+          <a class="text-white" href="#!"><i class="bi bi-facebook"></i></a>
+          <a class="text-white" href="#!"><i class="bi bi-twitter"></i></a>
+          <a class="text-white" href="#!"><i class="bi bi-linkedin"></i></a>
+          <a class="text-white" href="#!"><i class="bi bi-twitch"></i></a>
+          <a class="text-white" href="#!"><i class="bi bi-tiktok"></i></a>
+        </div>
+        <div class="align-items-center mt-5">Copyright © 2020 ACMilan.com. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <!-- Separate Popper and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha383-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT3GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha383-cVKIPhGWiC2Al3u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl3H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
